@@ -1,0 +1,11 @@
+Well this is the mail automating system for the development of the mailing the designated authorities 
+- Follow the pub sub model .Producer will produce the jobs to be to be processed which are then consumed by the producer 
+- Nodemailer will act as the transporter here 
+- Bull will be the producing and consuming the jobs by supporting the queue data structure of the Redis database.Bull will be already having the cron scheduling expression
+
+
+Context : 
+  i) The mail system should check the emails which are unresolved for every 15 days 
+  ii) Now we have to initially create the jobs in particular format . It should contain the Details of the complaint and as well as the attachments 
+  iii) As soon as the job is produced we will dynamically construct the email and will create an object of the related details and email 
+  iv) Now these job objects are queued into the queue created by the bull 

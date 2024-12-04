@@ -1,0 +1,30 @@
+{
+  "name": "complaint-portal-mailing",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "jsdoc -c jsdoc.json",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bull": "^4.16.4",
+    "clean-jsdoc-theme": "^4.3.0",
+    "dotenv": "^16.4.6",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.8.3",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.7",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^4.0.4"
+  }
+}
